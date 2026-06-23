@@ -415,3 +415,8 @@ if allof (address :domain :matches "From" "*patreon.com",
 header :contains "Subject" ["vehicle", "wagon", "cart", "carriage", "chariot", "sled", "sleigh", "mech", "tank", "locomotive", "train"]) {
     fileinto "Patreon:Vehicule";
 }
+
+if allof (address :domain :matches "From" "*patreon.com",
+header :contains "Subject" ["adventure", "campaign", "shot", "quest", "module", "encounter", "storyline", "scenario", "prologue", "epilogue"]) {
+    fileinto "Patreon:Adventure";
+}
