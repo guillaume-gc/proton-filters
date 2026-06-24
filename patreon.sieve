@@ -117,7 +117,7 @@ header :contains "Subject" ["druid", "druidic", "henge", "moonwell"]) {
 }
 
 if allof (address :domain :matches "From" "*patreon.com",
-header :contains "Subject" ["dungeon", "labyrinth", "maze", "catacomb"]) {
+header :contains "Subject" ["dungeon", "labyrinth", "maze", "catacomb", "tomb", "underground"]) {
     fileinto "Patreon:Dungeon";
 }
 
