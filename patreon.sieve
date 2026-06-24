@@ -57,7 +57,7 @@ header :contains "Subject" ["beach", "shore", "shoreline", "coast", "coastal", "
 }
 
 if allof (address :domain :matches "From" "*patreon.com",
-header :contains "Subject" ["bestiary", "compendium"]) {
+header :contains "Subject" ["bestiary", "compendium", "celestial", "demon", "devil", "fiend", "undead", "elemental", "dragon", "construct", "aberration", "fey", "giant", "humanoid", "monstrosity", "ooze", "plant", "beast", "swarm", "vampire", "werewolf", "lich", "zombie", "skeleton", "wraith", "golem", "sphinx", "hydra", "chimera", "griffon", "wyvern", "basilisk", "medusa", "mimic", "beholder", "mindflayer", "illithid", "aboleth"]) {
     fileinto "Patreon:Bestiary";
 }
 
