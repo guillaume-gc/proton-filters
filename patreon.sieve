@@ -420,3 +420,7 @@ if allof (address :domain :matches "From" "*patreon.com",
 header :contains "Subject" ["adventure", "campaign", "shot", "quest", "module", "encounter", "storyline", "scenario", "prologue", "epilogue"]) {
     fileinto "Patreon:Adventure";
 }
+
+if address :is "From" "oskarpotocki@creator.patreon.com" {
+    fileinto "Patreon:Mod";
+}
