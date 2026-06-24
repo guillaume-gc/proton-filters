@@ -428,3 +428,8 @@ if address :is "From" "oskarpotocki@creator.patreon.com" {
 if address :is "From" "mcromusic@creator.patreon.com" {
     fileinto "Patreon:Music";
 }
+
+if allof (address :domain :matches "From" "*patreon.com",
+header :contains "Subject" ["printing", "factory", "manufacture", "workshop", "foundry", "refinery", "mill", "loom", "kiln", "smelter", "furnace", "assembly", "warehouse", "industrial", "craftsman", "artisan", "press", "tannery", "distillery", "smokehouse"]) {
+    fileinto "Patreon:Factory";
+}
