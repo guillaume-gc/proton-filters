@@ -424,3 +424,7 @@ header :contains "Subject" ["adventure", "campaign", "shot", "quest", "module", 
 if address :is "From" "oskarpotocki@creator.patreon.com" {
     fileinto "Patreon:Mod";
 }
+
+if address :is "From" "mcromusic@creator.patreon.com" {
+    fileinto "Patreon:Music";
+}
