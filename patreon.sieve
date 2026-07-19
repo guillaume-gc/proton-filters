@@ -433,3 +433,8 @@ if allof (address :domain :matches "From" "*patreon.com",
 header :contains "Subject" ["printing", "factory", "manufacture", "workshop", "foundry", "refinery", "mill", "loom", "kiln", "smelter", "furnace", "assembly", "warehouse", "industrial", "craftsman", "artisan", "press", "tannery", "distillery", "smokehouse"]) {
     fileinto "Patreon:Factory";
 }
+
+if allof (address :domain :matches "From" "*patreon.com",
+header :contains "Subject" ["garden", "greenhouse", "hedge", "topiary", "pergola", "gazebo", "fountain", "flower", "botanical", "courtyard", "trellis", "arbor"]) {
+    fileinto "Patreon:Garden";
+}
